@@ -1,8 +1,8 @@
 import { NestFactory } from '@nestjs/core';
-import { AppModule } from './app.module';
+import { ProductsModule } from './products.module';
 
-async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
+async function ferrexProducts() {
+  const app = await NestFactory.create(ProductsModule);
   await app.listen(3000);
 }
-bootstrap();
+ferrexProducts();
